@@ -1,4 +1,9 @@
-Cassetete
+pdHead
+
+ctlmapping.txt
+patchers.txt
+
+
 
 organisation de tete qui casse les element entrant en liste sriptable par la tete
 
@@ -15,7 +20,7 @@ LE MOEMENT OU BRAIFUCK,
 graunularité de la donné
 
 interpolation entre les point de l'échantillon,  pour de la donnée,
-pouvoir 
+pouvoir
 
 
 
