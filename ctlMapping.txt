@@ -1,0 +1,8 @@
+/ctl/1/58 127 head /head/patcher/- 1;
+/ctl/1/59 127 head /head/patcher/+ 1;
+/ctl/1/46 127 head /head/patcher/go 1;
+/ctl/1/43 * head /head/rev/go 1;
+/ctl/1/44 * head /head/ff/go 1;
+/ctl/1/42 * head /head/stop/go 1;
+/ctl/1/41 * head /head/play/go 1;
+/ctl/1/45 * head /head/go/go 1;
