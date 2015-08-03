@@ -1,4 +1,10 @@
-pdHead
+#pdHead
+
+pdHEad est patch Pure-data qui sert à jouer d'autre patch pure data
+
+Fonctionnalité :
+pdHead charge dynamiquement des patch dans l'objet pd~ ce qui démare la lecture dans un thread séparé
+
 
 ctlmapping.txt
 patchers.txt
@@ -46,4 +52,4 @@ https://github.com/alexandros301/map/tree/master
 à investiguer
 
 https://github.com/m---w/kollabs
-# pdHead
+# /pdHead
