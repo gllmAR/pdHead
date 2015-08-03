@@ -222,14 +222,14 @@
 #X connect 7 0 5 1;
 #X connect 8 0 3 0;
 #X restore 15 112 pd vol;
-#N canvas 867 25 450 300 OSC-dispatch 0;
+#N canvas 867 25 450 300 OSC-dispatch 1;
 #X obj 12 85 netreceive -u -b, f 17;
 #X msg 77 62 listen 0;
 #X obj 12 131 oscparse;
 #X obj 66 190 send;
 #X msg 12 63 listen \$1;
 #X obj 12 33 inlet;
-#N canvas 0 22 450 300 list2osc 0;
+#N canvas 0 22 422 713 list2osc 0;
 #X obj 37 160 list split 1;
 #X obj 37 133 list append;
 #X obj 37 76 t b l;
@@ -297,7 +297,7 @@
 #X obj 44 406 makefilename %s;
 #X msg 173 381 set \$1%s;
 #X obj 44 434 t s a;
-#X obj 110 456 symbol;
+#X obj 113 463 symbol;
 #X msg 137 341 set %s;
 #X obj 42 310 t a b;
 #X obj 65 -29 list length;
@@ -456,7 +456,8 @@
 #N canvas 43 105 621 608 patcherBank 0;
 #X obj 178 206 text size patchers;
 #X obj 218 181 text define -k patchers;
-#A set grb-patch/simplePlay.pd \; grb-patch/simplePlayNo.pd \;;
+#A set test_patcher/simplePlay.pd \; test_patcher/simplePlayNo.pd \;
+;
 #X obj 94 267 text get patchers;
 #X msg 298 155 write patchers.txt;
 #X msg 176 154 read patchers.txt;
