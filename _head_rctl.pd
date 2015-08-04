@@ -1,50 +1,50 @@
-#N canvas 72 66 450 300 10;
+#N canvas 120 42 455 369 10;
 #X text 15 10 _head remote ctl;
-#X floatatom 16 67 5 0 0 0 - - -, f 5;
-#X msg 16 85 /DAC \$1;
-#X floatatom 86 67 5 0 0 0 - - -, f 5;
-#X msg 87 85 /ADC \$1;
-#X obj 173 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X floatatom 16 67 5 0 1 0 - - -, f 5;
+#X floatatom 106 67 5 0 1 0 - - -, f 5;
+#X obj 13 174 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 173 83 /play 1;
-#X obj 252 62 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X msg 13 193 /play 1;
+#X obj 92 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 252 80 /stop 1;
-#X obj 328 59 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X msg 92 194 /stop 1;
+#X obj 168 176 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X msg 328 79 /loop \$1;
-#X obj 243 152 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X msg 168 196 /loop \$1;
+#X obj 243 62 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 261 61 /head/patcher/+;
+#X msg 261 82 /head/patcher/-;
+#X msg 261 103 /head/patcher/go;
+#X obj 243 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 243 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 261 151 /head/patcher/+;
-#X msg 261 172 /head/patcher/-;
-#X msg 261 193 /head/patcher/go;
-#X obj 243 171 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 243 190 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 16 269 pd-OSC/oSend localhost 10049;
-#X obj 17 245 r \$0-rctl;
+#X obj 17 275 r \$0-rctl;
 #X obj 15 108 s \$0-rctl;
-#X obj 87 108 s \$0-rctl;
-#X obj 173 103 s \$0-rctl;
-#X obj 252 100 s \$0-rctl;
-#X obj 328 98 s \$0-rctl;
-#X obj 13 35 pd-OSC/oReceive 10001;
-#X obj 260 227 s \$0-rctl;
-#X connect 1 0 2 0;
-#X connect 2 0 19 0;
+#X obj 107 108 s \$0-rctl;
+#X obj 13 213 s \$0-rctl;
+#X obj 92 214 s \$0-rctl;
+#X obj 168 215 s \$0-rctl;
+#X obj 260 127 s \$0-rctl;
+#X msg 16 85 /head/DAC \$1;
+#X msg 107 85 /head/ADC \$1;
+#X obj 13 35 pd-OSC/oReceive 10049;
+#X obj 16 299 pd-OSC/oSend localhost 10050;
+#X connect 1 0 22 0;
+#X connect 2 0 23 0;
 #X connect 3 0 4 0;
-#X connect 4 0 20 0;
+#X connect 4 0 18 0;
 #X connect 5 0 6 0;
-#X connect 6 0 21 0;
+#X connect 6 0 19 0;
 #X connect 7 0 8 0;
-#X connect 8 0 22 0;
+#X connect 8 0 20 0;
 #X connect 9 0 10 0;
-#X connect 10 0 23 0;
-#X connect 11 0 12 0;
-#X connect 12 0 25 0;
-#X connect 13 0 25 0;
-#X connect 14 0 25 0;
-#X connect 15 0 13 0;
-#X connect 16 0 14 0;
-#X connect 18 0 17 0;
+#X connect 10 0 21 0;
+#X connect 11 0 21 0;
+#X connect 12 0 21 0;
+#X connect 13 0 11 0;
+#X connect 14 0 12 0;
+#X connect 15 0 25 0;
+#X connect 22 0 16 0;
+#X connect 23 0 17 0;
