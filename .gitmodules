@@ -1,3 +1,3 @@
-[submodule "pdosc"]
-	path = pdosc
-	url = https://github.com/gllmAR/pdosc.git
+[submodule "pd-osc"]
+	path = pd-osc
+	url = https://github.com/gllmAR/pd-osc.git
